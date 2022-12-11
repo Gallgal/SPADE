@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>SPADE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Dorsa&amp;familiy=Raleway&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <object data="./intro.svg" style="height: 90vh; top: 5vh; position: absolute;"></object>
+<!--  <h4 class="title">
+    SPADE
+  </h4>
+<div class="subtitle">
+    Click to start
+  </div>-->
+  <div class="title"> SPADE </div>
+</div>
+
+<div class="cursor">
+  <div class="cursor__point"></div>
+  <div class="cursor__light"></div>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <filter id="light">
+    <feSpecularLighting result="specOut" surfaceScale="1" specularConstant="1.2" specularExponent="10" lighting-color="#999">
+      <fePointLight id="point-light" x="50" y="75" z="100" />
+    </feSpecularLighting>
+  </filter>
+
+  <filter id="noise">
+    <feTurbulence id="turbulence" type="fractalNoise" baseFrequency="0.999 0.999" seed="1" numOctaves="10" />
+    <feColorMatrix type="saturate" values="0" />
+    <feComponentTransfer result="noise">
+      <feFuncA type="linear" slope="1" />
+    </feComponentTransfer>
+    <feBlend in="noise" in2="SourceGraphic" mode="multiply" />
+  </filter>
+</svg>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

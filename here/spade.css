@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@400;700&display=swap');
+body{background: #F8F5F0; 
+	font-family: 'Noto Sans KR', sans-serif; 
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 42px;
+	word-break: keep-all;}
+.view{width: 1728px; margin: auto; display: block; position: relative;}
+div{margin: 0}
+div.row{width: 1008px; margin: auto; display: flex; position: relative;}
+.col1{width: 16%}
+.col2{width: 33.33%;}
+.col3{width: 50%;}
+.col4{width: 66.66%;}
+.col5{width: 83.33%;}
+.col6{width: 100%; text-align: center;}
+.text{position: absolute; top: 0; left:0; width: 1728px;}
+.black{height: 100%; width: 100%; background: black; margin: 0; background-position: center;
+	background-attachment: fixed; position: absolute; background-repeat: no-repeat;}
+.content1{width: 1736.5px; position: absolute; top: 405.5px; left:-72px;}
+.path1{}
+.content2{position: absolute; width: 998.5px; top:18207px; left: 460px;}
+.path2{}
+.content3{position:absolute; width:518px; top:calc(19645px + 1500px); left:483px;}
+.path3{}
+.bold{font-weight: 700;}
+.big{font-size: 32px; line-height: 56px;}
+.big32{font-size: 36px; line-height: 56px;}
+.big40{font-size: 40px; line-height: 70px;}
+.serif{font-family: 'Nanum Myeongjo', serif; font-weight: 400;}
+.mal{text-indent: 4rem;}
+.scroll{ opacity: 0;transition: all 1.5s 0.5s; transform: scale(0.9) translateY(-10px);}
+.textscroll{ opacity: 0;transition: all 1.0s 0.5s; transform: translateY(-10px);}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in {
+  animation: fade-in 1.4s;
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
